@@ -24,5 +24,5 @@ src
 ## Install by degit
 ```
 npm install -g degit
-degit https://github.com/krealseu/vue3-base my-new-project
+degit https://github.com/krealseu/vue3-base.git my-new-project
 ```
