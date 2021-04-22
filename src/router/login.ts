@@ -46,7 +46,7 @@ export const checkLogin = function(router:Router){
         if (await isLogin()) {
             if (to.path === login) {
                 if (to.query.next) {
-                    next({path: to.query.next})
+                    next({path: <string>to.query.next})
                 } else {
                     next({path: home})
                 }

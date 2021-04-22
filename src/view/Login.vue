@@ -25,7 +25,7 @@ export default defineComponent({
     const password = ref("");
     const login = function () {
       store.commit("setLogin", true);
-      router.replace(route.query.next || "/");
+      router.replace(<string>route.query.next || "/");
     };
     return {
       login,
